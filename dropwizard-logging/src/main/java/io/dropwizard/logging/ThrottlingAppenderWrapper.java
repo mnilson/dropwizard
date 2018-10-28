@@ -8,7 +8,7 @@ import ch.qos.logback.core.filter.Filter;
 import ch.qos.logback.core.spi.DeferredProcessingAware;
 import ch.qos.logback.core.spi.FilterReply;
 import ch.qos.logback.core.status.Status;
-import com.google.common.util.concurrent.RateLimiter;
+import io.dropwizard.logging.internal.RateLimiter;
 import io.dropwizard.util.Duration;
 
 import java.util.List;

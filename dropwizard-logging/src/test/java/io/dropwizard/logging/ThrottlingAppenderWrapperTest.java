@@ -17,6 +17,7 @@ import java.util.concurrent.TimeUnit;
 
 import javax.annotation.Nullable;
 
+import io.dropwizard.logging.internal.RateLimiter;
 import org.apache.commons.text.StringSubstitutor;
 import org.assertj.core.api.Condition;
 import org.junit.After;
@@ -26,7 +27,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.codahale.metrics.MetricRegistry;
-import com.google.common.util.concurrent.RateLimiter;
 
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import io.dropwizard.configuration.ConfigurationValidationException;
