@@ -125,7 +125,7 @@ of logging patterns. See the `logback-access-pattern`_ docs for the reference.
 ====================== ================ ======================================================================
 Name                   Default          Description
 ====================== ================ ======================================================================
-appenders              console appender The set of AppenderFactory appenders to which requests will be logged.
+appenders              console appender The set of AppenderFactory appenders to which requests will be logged. Custom appenders must be capable of handling IAccessEvent events.
                                         See :ref:`logging <man-configuration-logging>` for more info.
 ====================== ================ ======================================================================
 
@@ -588,7 +588,7 @@ Name                   Default      Description
 level                  Level.INFO   Logback logging level.
 additive               true         Logback additive setting.
 loggers                (none)       Individual logger configuration (both forms are acceptable).
-appenders              (none)       One of console, file or syslog.
+appenders              (none)       One of console, file or syslog. Custom appenders must be capable of handling ILoggingEvent events.
 ====================== ===========  ============================================================
 
 
